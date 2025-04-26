@@ -1,7 +1,7 @@
 
 
 import Util.ConnectionUtil;
-import Util.FileUtil;
+//import Util.FileUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -50,7 +50,8 @@ public class AlterATable {
      *
      */
     public void problem1(){
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        //String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "ALTER TABLE site_user ADD COLUMN lastname Varchar(100)";
 
         try {
             Connection connection = ConnectionUtil.getConnection();
